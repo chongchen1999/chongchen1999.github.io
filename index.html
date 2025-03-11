@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Title - Department</title>
+    <style>
+        /* Clean, minimalistic styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-weight: 400;
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-weight: 400;
+            font-size: 1.8rem;
+            margin-top: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        h3 {
+            font-weight: 400;
+            font-size: 1.4rem;
+            margin-top: 25px;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .resource-link {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 8px 15px;
+            background-color: #f4f4f4;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        .resource-link:hover {
+            background-color: #e4e4e4;
+            text-decoration: none;
+        }
+        .resource-link i {
+            margin-right: 5px;
+        }
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        .course-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 25px 0;
+        }
+        .course-info div {
+            flex: 1;
+            min-width: 200px;
+        }
+        /* Simple responsive design */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+    <!-- Font Awesome for PDF icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Course Title</h1>
+        <p>Department Name, University - Semester Year</p>
+    </header>
+
+    <div class="course-info">
+        <div>
+            <h3>Instructor</h3>
+            <p>Professor Name<br>
+            Email: professor@university.edu<br>
+            Office: Building, Room 123<br>
+            Office Hours: Days, Time</p>
+        </div>
+        <div>
+            <h3>Course Details</h3>
+            <p>Meeting Times: Days, Time<br>
+            Location: Building, Room 456<br>
+            Course Code: ABC 123</p>
+        </div>
+    </div>
+
+    <section id="overview">
+        <h2>Course Overview</h2>
+        <p>Brief description of your course goes here. This is a short paragraph about what students will learn, the approach of the course, and its importance in their education.</p>
+    </section>
+
+    <section id="syllabus">
+        <h2>Syllabus</h2>
+        <p>The course syllabus contains detailed information about course objectives, grading policies, and the schedule.</p>
+        <a href="pdfs/syllabus.pdf" class="resource-link" target="_blank">
+            <i class="fas fa-file-pdf"></i> View Complete Syllabus
+        </a>
+    </section>
+
+    <section id="lectures">
+        <h2>Lecture Slides</h2>
+        <p>All lecture slides will be posted here after each class.</p>
+        
+        <h3>Module 1: Introduction</h3>
+        <a href="pdfs/lecture1.pdf" class="resource-link" target="_blank">
+            <i class="fas fa-file-pdf"></i> Lecture 1: Course Introduction
+        </a>
+        <a href="pdfs/lecture2.pdf" class="resource-link" target="_blank">
+            <i class="fas fa-file-pdf"></i> Lecture 2: Fundamental Concepts
+        </a>
+        
+        <h3>Module 2: Core Topics</h3>
+        <a href="pdfs/lecture3.pdf" class="resource-link" target="_blank">
+            <i class="fas fa-file-pdf"></i> Lecture 3: Advanced Principles
+        </a>
+        <a href="pdfs/lecture4.pdf" class="resource-link" target="_blank">
+            <i class="fas fa-file-pdf"></i> Lecture 4: Practical Applications
+        </a>
+    </section>
+
+    <section id="notebooks">
+        <h2>Notebooks</h2>
+        <p>Interactive notebooks for hands-on learning and practice.</p>
+        
+        <a href="pdfs/notebook1.pdf" class="resource-link" target="_blank">
+            <i class="fas fa-file-pdf"></i> Notebook 1: Data Exploration
+        </a>
+        <a href="pdfs/notebook2.pdf" class="resource-link" target="_blank">
+            <i class="fas fa-file-pdf"></i> Notebook 2: Model Building
+        </a>
+        <a href="pdfs/notebook3.pdf" class="resource-link" target="_blank">
+            <i class="fas fa-file-pdf"></i> Notebook 3: Evaluation Techniques
+        </a>
+    </section>
+
+    <section id="assignments">
+        <h2>Homework Assignments</h2>
+        <p>All assignments should be submitted according to the instructions in each document.</p>
+        
+        <a href="pdfs/homework1.pdf" class="resource-link" target="_blank">
+            <i class="fas fa-file-pdf"></i> Homework 1: Foundations (Due: MM/DD)
+        </a>
+        <a href="pdfs/homework2.pdf" class="resource-link" target="_blank">
+            <i class="fas fa-file-pdf"></i> Homework 2: Applications (Due: MM/DD)
+        </a>
+        <a href="pdfs/project.pdf" class="resource-link" target="_blank">
+            <i class="fas fa-file-pdf"></i> Final Project Guidelines (Due: MM/DD)
+        </a>
+    </section>
+
+    <footer>
+        <p>© Professor Name, Department, University - Updated: March 2025</p>
+        <p>This site is hosted on <a href="https://github.com/yourusername/course-repo">GitHub</a>.</p>
+    </footer>
+</body>
+</html>
